@@ -8,14 +8,8 @@
 
 import SwiftUI
 
-enum Temperature: String, CaseIterable {
-    case celsius = "Celsius"
-    case fahrenheit = "Fahrenheit"
-    case kelvin = "Kelvin"
-}
-
 struct ContentView: View {
-    private let temperatureUnits: [Temperature] = Temperature.allCases
+    private let temperatureUnits: [TemperatureUnit] = TemperatureUnit.allCases
     
     @State private var temperatureValue = ""
     @State private var unitInput = 0
@@ -100,8 +94,6 @@ struct ContentView: View {
         }
     }
 }
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
