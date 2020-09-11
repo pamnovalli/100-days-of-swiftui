@@ -16,11 +16,14 @@ struct ContentView: View {
     @State private var unitOutput = 0
     
     
-    var result: Double {
+    private var result: Double {
         let input = temperatureUnits[unitInput]
         let output = temperatureUnits[unitOutput]
         
-        guard let value = Double(temperatureValue), value != 0 else { return 0.0}
+        guard let value = Double(temperatureValue),
+              value != 0 else {
+         return 0.0
+        }
         
         switch (input, output) {
         case (.celsius, .fahrenheit):
@@ -90,7 +93,6 @@ struct ContentView: View {
                 
             .padding(EdgeInsets(top: 50, leading: 20, bottom: 100, trailing: 20))
             .navigationBarTitle(Text("Temperature convert"))
-            
         }
     }
 }
