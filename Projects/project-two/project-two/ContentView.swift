@@ -14,17 +14,19 @@ struct ContentView: View {
     @State private var correctAnswer = Int.random(in: 0...2)
     @State private var showingScore = false
     @State private var scoreTitle = ""
+    @State private var score = 0
     
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [.blue, .black]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
+            LinearGradient(gradient: Gradient(colors: [.blue, .white]), startPoint: .top, endPoint: .bottom).edgesIgnoringSafeArea(.all)
             VStack(spacing: 30) {
                 VStack {
+                    Text("")
                     Text("Tap the flag of")
                         .foregroundColor(.white)
                     Text(countries[correctAnswer])
                         .font(.largeTitle)
-                        .fontWeight(.black)
+                        .fontWeight(.bold)
                 }
                 
                 ForEach(0 ..< 3) { number in
@@ -33,17 +35,17 @@ struct ContentView: View {
                     }) {
                         Image(self.countries[number])
                             .renderingMode(.original)
-                            .clipShape(Capsule())
-                            .overlay(Capsule().stroke(Color.black, lineWidth: 1))
-                            .shadow(color: .black, radius: 2)
                     }
+                    .overlay(
+                    RoundedRectangle(cornerRadius: 5)
+                        .stroke(Color.white, lineWidth: 2)
+                    .shadow(color: .gray, radius: 1))
                 }
                 
-                Spacer()
             }
                 
             .alert(isPresented: $showingScore) {
-                Alert(title: Text(scoreTitle), message: Text("Your score is ???"), dismissButton: .default(Text("Continue")) {
+                Alert(title: Text(scoreTitle), message: Text("Your score is \(score)"), dismissButton: .default(Text("Continue")) {
                     self.askQuestion()
                     })
             }
@@ -53,8 +55,10 @@ struct ContentView: View {
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
             scoreTitle = "Correct"
+            score += 1
         } else {
-            scoreTitle = "Wrong"
+            scoreTitle = "Wrong! That’s the flag of \(countries[number])"
+            score -= 1
         }
         
         showingScore = true
