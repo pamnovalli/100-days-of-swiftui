@@ -33,15 +33,13 @@ struct ContentView: View {
                     Button(action: {
                         self.flagTapped(number)
                     }) {
-                        Image(self.countries[number])
-                            .renderingMode(.original)
+                        FlagImage(image: self.countries[number])
                     }
                     .overlay(
                     RoundedRectangle(cornerRadius: 5)
                         .stroke(Color.white, lineWidth: 2)
                     .shadow(color: .gray, radius: 1))
                 }
-                
             }
                 
             .alert(isPresented: $showingScore) {
@@ -73,5 +71,14 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct FlagImage: View {
+    var image: String
+    
+    var body: some View {
+        Image(image)
+          .renderingMode(.original)
     }
 }
