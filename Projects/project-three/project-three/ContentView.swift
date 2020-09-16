@@ -10,20 +10,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-        .padding()
-        .background(Color.red)
-        .padding()
-        .background(Color.blue)
-        .padding()
-        .background(Color.green)
-        .padding()
-        .background(Color.yellow)
+        Text("Hello, World!").modifier(TextStyle())
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct TextStyle: ViewModifier {
+    func body(content: Content) -> some View {
+        content.font(.largeTitle)
+            .foregroundColor(Color.blue)
+    }
+}
+
+extension View {
+    func titleStyle() -> some View {
+        self.modifier(TextStyle())
     }
 }
