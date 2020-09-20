@@ -14,6 +14,10 @@
 		B398A8C62513D4BC00E0B694 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B398A8C52513D4BC00E0B694 /* Preview Assets.xcassets */; };
 		B398A8C92513D4BC00E0B694 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B398A8C72513D4BC00E0B694 /* LaunchScreen.storyboard */; };
 		B398A8D12513D99200E0B694 /* StepperExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B398A8D02513D99200E0B694 /* StepperExampleView.swift */; };
+		B3CFC0DB2516DCAB0064F3FA /* Project.json in Resources */ = {isa = PBXBuildFile; fileRef = B3CFC0D42516DCAB0064F3FA /* Project.json */; };
+		B3CFC0DC2516DCAB0064F3FA /* BetterRest.csv.json in Resources */ = {isa = PBXBuildFile; fileRef = B3CFC0D62516DCAB0064F3FA /* BetterRest.csv.json */; };
+		B3CFC0DD2516DCAB0064F3FA /* BetterRest 1.json in Resources */ = {isa = PBXBuildFile; fileRef = B3CFC0D82516DCAB0064F3FA /* BetterRest 1.json */; };
+		B3CFC0DE2516DCAB0064F3FA /* SleepCalculator.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = B3CFC0DA2516DCAB0064F3FA /* SleepCalculator.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		B398A8C82513D4BC00E0B694 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B398A8CA2513D4BC00E0B694 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B398A8D02513D99200E0B694 /* StepperExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepperExampleView.swift; sourceTree = "<group>"; };
+		B3CFC0D42516DCAB0064F3FA /* Project.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Project.json; sourceTree = "<group>"; };
+		B3CFC0D62516DCAB0064F3FA /* BetterRest.csv.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BetterRest.csv.json; sourceTree = "<group>"; };
+		B3CFC0D82516DCAB0064F3FA /* BetterRest 1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "BetterRest 1.json"; sourceTree = "<group>"; };
+		B3CFC0DA2516DCAB0064F3FA /* SleepCalculator.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SleepCalculator.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 				B398A8C02513D4B900E0B694 /* ContentView.swift */,
 				B398A8C22513D4BC00E0B694 /* Assets.xcassets */,
 				B398A8C72513D4BC00E0B694 /* LaunchScreen.storyboard */,
+				B3CFC0D22516DCAB0064F3FA /* SleepCalculator.mlmodel */,
 				B398A8CA2513D4BC00E0B694 /* Info.plist */,
 				B398A8C42513D4BC00E0B694 /* Preview Content */,
 				B398A8D02513D99200E0B694 /* StepperExampleView.swift */,
@@ -76,6 +85,49 @@
 				B398A8C52513D4BC00E0B694 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B3CFC0D22516DCAB0064F3FA /* SleepCalculator.mlmodel */ = {
+			isa = PBXGroup;
+			children = (
+				B3CFC0D32516DCAB0064F3FA /* Snapshots */,
+				B3CFC0D42516DCAB0064F3FA /* Project.json */,
+				B3CFC0D52516DCAB0064F3FA /* Data Sources */,
+				B3CFC0D72516DCAB0064F3FA /* Model Containers */,
+				B3CFC0D92516DCAB0064F3FA /* Models */,
+			);
+			path = SleepCalculator.mlmodel;
+			sourceTree = "<group>";
+		};
+		B3CFC0D32516DCAB0064F3FA /* Snapshots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Snapshots;
+			sourceTree = "<group>";
+		};
+		B3CFC0D52516DCAB0064F3FA /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				B3CFC0D62516DCAB0064F3FA /* BetterRest.csv.json */,
+			);
+			path = "Data Sources";
+			sourceTree = "<group>";
+		};
+		B3CFC0D72516DCAB0064F3FA /* Model Containers */ = {
+			isa = PBXGroup;
+			children = (
+				B3CFC0D82516DCAB0064F3FA /* BetterRest 1.json */,
+			);
+			path = "Model Containers";
+			sourceTree = "<group>";
+		};
+		B3CFC0D92516DCAB0064F3FA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3CFC0DA2516DCAB0064F3FA /* SleepCalculator.mlmodel */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +188,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3CFC0DC2516DCAB0064F3FA /* BetterRest.csv.json in Resources */,
 				B398A8C92513D4BC00E0B694 /* LaunchScreen.storyboard in Resources */,
 				B398A8C62513D4BC00E0B694 /* Preview Assets.xcassets in Resources */,
 				B398A8C32513D4BC00E0B694 /* Assets.xcassets in Resources */,
+				B3CFC0DD2516DCAB0064F3FA /* BetterRest 1.json in Resources */,
+				B3CFC0DB2516DCAB0064F3FA /* Project.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3CFC0DE2516DCAB0064F3FA /* SleepCalculator.mlmodel in Sources */,
 				B398A8BD2513D4B900E0B694 /* AppDelegate.swift in Sources */,
 				B398A8D12513D99200E0B694 /* StepperExampleView.swift in Sources */,
 				B398A8BF2513D4B900E0B694 /* SceneDelegate.swift in Sources */,
