@@ -26,28 +26,21 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             Form {
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("When do you want to wake up?")
-                        .font(.headline)
-                    
+                Section(header: Text("When do you want to wake up?").font(.headline)) {
                     DatePicker("Please enter a time", selection: $wakeUp, displayedComponents: .hourAndMinute)
                         .labelsHidden()
                         .datePickerStyle(WheelDatePickerStyle())
                 }
                 
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("Desired amount of sleep")
-                        .font(.headline)
-                    
+                Section(header: Text("Desired amount of sleep")
+                            .font(.headline)) {
                     Stepper(value: $sleepAmount, in: 4...12, step: 0.25) {
                         Text("\(sleepAmount, specifier: "%g") hours")
                     }
                 }
                 
-                VStack(alignment: .leading, spacing: 0) {
-                    Text("Daily coffee intake")
-                        .font(.headline)
-                    
+                Section(header: Text("Daily coffee intake")
+                            .font(.headline)) {
                     Stepper(value: $coffeeAmount, in: 1...20) {
                         if coffeeAmount == 1 {
                             Text("1 cup")
@@ -57,11 +50,12 @@ struct ContentView: View {
                     }
                 }
                 
+                
                 .navigationBarTitle("BetterRest")
                 .navigationBarItems(trailing:
-                    Button(action: calculateBedtime) {
-                        Text("Calculate")
-                    }
+                                        Button(action: calculateBedtime) {
+                                            Text("Calculate")
+                                        }
                 )
                 
                 .alert(isPresented: $showingAlert) {
