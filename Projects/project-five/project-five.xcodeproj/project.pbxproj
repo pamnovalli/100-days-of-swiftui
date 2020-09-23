@@ -12,7 +12,7 @@
 		B397612F251822DF00421DAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B397612E251822DF00421DAF /* Assets.xcassets */; };
 		B3976132251822DF00421DAF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3976131251822DF00421DAF /* Preview Assets.xcassets */; };
 		B397613B2518267900421DAF /* ListExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B397613A2518267900421DAF /* ListExample.swift */; };
-		B3EF0D032519956A00ED2C2D /* start copy.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3EF0D022519956A00ED2C2D /* start copy.txt */; };
+		B3EF0D032519956A00ED2C2D /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = B3EF0D022519956A00ED2C2D /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +23,7 @@
 		B3976131251822DF00421DAF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3976133251822DF00421DAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B397613A2518267900421DAF /* ListExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExample.swift; sourceTree = "<group>"; };
-		B3EF0D022519956A00ED2C2D /* start copy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "start copy.txt"; sourceTree = SOURCE_ROOT; };
+		B3EF0D022519956A00ED2C2D /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = start.txt; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 				B397612C251822DE00421DAF /* ContentView.swift */,
 				B397612E251822DF00421DAF /* Assets.xcassets */,
 				B3976133251822DF00421DAF /* Info.plist */,
-				B3EF0D022519956A00ED2C2D /* start copy.txt */,
+				B3EF0D022519956A00ED2C2D /* start.txt */,
 				B397613A2518267900421DAF /* ListExample.swift */,
 				B3976130251822DF00421DAF /* Preview Content */,
 			);
@@ -134,7 +134,7 @@
 			files = (
 				B3976132251822DF00421DAF /* Preview Assets.xcassets in Resources */,
 				B397612F251822DF00421DAF /* Assets.xcassets in Resources */,
-				B3EF0D032519956A00ED2C2D /* start copy.txt in Resources */,
+				B3EF0D032519956A00ED2C2D /* start.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
