@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AnimationExample: View {
     @State private var animationAmount: CGFloat = 1
+    @State private var enable = false
     
     var body: some View {
         VStack {
@@ -17,15 +18,14 @@ struct AnimationExample: View {
             Spacer()
             
             Button("Tap me") {
-                self.animationAmount
-                += 1
+                self.enable.toggle()
             }
-            .padding(50)
-            .background(Color.red)
+            .frame(width: 200, height: 200)
+            .background(enable ? Color.blue : Color.red)
+            .animation(nil)
             .foregroundColor(.white)
-            .clipShape(Circle())
-            .scaleEffect(animationAmount)
-            .animation(.default)
+            .clipShape(RoundedRectangle(cornerRadius: enable ? 60 : 0))
+            .animation(.interpolatingSpring(stiffness: 10, damping: 1))
         }
     }
 }
