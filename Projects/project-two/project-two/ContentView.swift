@@ -15,6 +15,7 @@ struct ContentView: View {
     @State private var showingScore = false
     @State private var scoreTitle = ""
     @State private var score = 0
+    @State private var correctFlag = false
     
     var body: some View {
         ZStack {
@@ -39,6 +40,9 @@ struct ContentView: View {
                     RoundedRectangle(cornerRadius: 5)
                         .stroke(Color.white, lineWidth: 2)
                     .shadow(color: .gray, radius: 1))
+                    .rotationEffect(correctFlag && number == correctAnswer ? .degrees(-360) : .zero)
+                    .animation(.default)
+                    
                 }
             }
                 
@@ -54,6 +58,8 @@ struct ContentView: View {
         if number == correctAnswer {
             scoreTitle = "Correct"
             score += 1
+            
+            correctFlag.toggle()
         } else {
             scoreTitle = "Wrong! That’s the flag of \(countries[number])"
             score -= 1
@@ -65,6 +71,7 @@ struct ContentView: View {
     func askQuestion() {
         countries.shuffled()
         correctAnswer = Int.random(in: 0...2)
+        correctFlag = false
     }
 }
 

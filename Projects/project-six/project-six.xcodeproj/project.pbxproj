@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B3693DE225201E55007A7878 /* ShowingViewsWithTransitionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3693DE125201E55007A7878 /* ShowingViewsWithTransitionExample.swift */; };
+		B3693DE5252020DA007A7878 /* CornerRotateModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3693DE4252020DA007A7878 /* CornerRotateModifier.swift */; };
 		B3C6551B251BC2FD0061AAF8 /* project_sixApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6551A251BC2FD0061AAF8 /* project_sixApp.swift */; };
 		B3C6551D251BC2FD0061AAF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6551C251BC2FD0061AAF8 /* ContentView.swift */; };
 		B3C6551F251BC2FE0061AAF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C6551E251BC2FE0061AAF8 /* Assets.xcassets */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B3693DE125201E55007A7878 /* ShowingViewsWithTransitionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowingViewsWithTransitionExample.swift; sourceTree = "<group>"; };
+		B3693DE4252020DA007A7878 /* CornerRotateModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRotateModifier.swift; sourceTree = "<group>"; };
 		B3C65517251BC2FD0061AAF8 /* project-six.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project-six.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C6551A251BC2FD0061AAF8 /* project_sixApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_sixApp.swift; sourceTree = "<group>"; };
 		B3C6551C251BC2FD0061AAF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				B3C65523251BC2FE0061AAF8 /* Info.plist */,
 				B3C65520251BC2FE0061AAF8 /* Preview Content */,
 				B3C6552A251BC3EF0061AAF8 /* AnimationExample.swift */,
+				B3693DE125201E55007A7878 /* ShowingViewsWithTransitionExample.swift */,
+				B3693DE4252020DA007A7878 /* CornerRotateModifier.swift */,
 			);
 			path = "project-six";
 			sourceTree = "<group>";
@@ -143,6 +149,8 @@
 			files = (
 				B3C6551D251BC2FD0061AAF8 /* ContentView.swift in Sources */,
 				B3C6552B251BC3EF0061AAF8 /* AnimationExample.swift in Sources */,
+				B3693DE225201E55007A7878 /* ShowingViewsWithTransitionExample.swift in Sources */,
+				B3693DE5252020DA007A7878 /* CornerRotateModifier.swift in Sources */,
 				B3C6551B251BC2FD0061AAF8 /* project_sixApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
