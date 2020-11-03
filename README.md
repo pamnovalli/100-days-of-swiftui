@@ -1,4 +1,4 @@
-# 100 days of swift 
+# 100 days of SwiftUI
 
 <p> 100 days of Swift is a marathon for learning Swift created by Paul Hudson creator and writer of the Hacking with Swift blog. 
 
