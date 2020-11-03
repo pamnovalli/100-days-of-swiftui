@@ -4,6 +4,6 @@
 
  ## **The marathon premises:**
 
-1 - Read and practice Swift for at least 1 hour every day
+1 - Read and practice SwiftUI for at least 1 hour every day
 
 2 - Talk and share with others about your progress
