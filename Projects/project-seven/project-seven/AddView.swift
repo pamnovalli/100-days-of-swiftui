@@ -13,6 +13,7 @@ struct AddView: View {
     @State private var amount = ""
     @ObservedObject var expenses: Expenses
     @Environment(\.presentationMode) var presentationMode
+    @State private var showingAlert = false
 
     static let types = ["Business", "Personal"]
 
@@ -35,7 +36,12 @@ struct AddView: View {
                     let item = ExpenseItem(name: self.name, type: self.type, amount: actualAmount)
                     self.expenses.items.append(item)
                     self.presentationMode.wrappedValue.dismiss()
+                } else {
+                    self.showingAlert = true
                 }
+            }
+            .alert(isPresented: $showingAlert) {
+                Alert(title: Text("It was not possible to add a new expense"), message: Text("Enter a numeric value and try again"), dismissButton: .default(Text("Cancel")))
             })
         }
     }

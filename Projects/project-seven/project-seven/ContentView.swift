@@ -24,6 +24,7 @@ struct ContentView: View {
 
                         Spacer()
                         Text("$\(item.amount)")
+                            .foregroundColor(item.amount < 10 ? Color.green : item.amount < 100 ? Color.blue : Color.red)
                     }
                 }
                 .onDelete(perform: removeItems)
@@ -35,6 +36,7 @@ struct ContentView: View {
                                         Image(systemName: "plus")
                                     }
             )
+            .navigationBarItems(leading: EditButton())
             .sheet(isPresented: $showingAddExpense) {
                 AddView(expenses: self.expenses)
             }
