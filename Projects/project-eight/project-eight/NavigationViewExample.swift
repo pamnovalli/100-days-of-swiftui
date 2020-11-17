@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct NavigationViewExample: View {
     var body: some View {
         NavigationView {
             VStack {
@@ -20,7 +20,7 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct NavigationViewExample_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
