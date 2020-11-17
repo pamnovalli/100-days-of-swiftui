@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentGeometryView: View {
     var body: some View {
         Triangle()
             .stroke(Color.red, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
@@ -19,7 +19,7 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct ContentGeometryView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
@@ -54,3 +54,4 @@ struct Arc: Shape {
         return path
     }
 
+}

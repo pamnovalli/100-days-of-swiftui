@@ -7,16 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B316E12525635A9100272AD7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316E12425635A9100272AD7 /* ContentView.swift */; };
+		B316E12925635AEC00272AD7 /* Flower.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316E12825635AEC00272AD7 /* Flower.swift */; };
+		B316E12C2563631500272AD7 /* ColorCyclingCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316E12B2563631500272AD7 /* ColorCyclingCircle.swift */; };
+		B316E12F2563654A00272AD7 /* ColorCyclingCircleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B316E12E2563654A00272AD7 /* ColorCyclingCircleContentView.swift */; };
 		B3C9747D255A3AA5008C3B2F /* project_nineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9747C255A3AA5008C3B2F /* project_nineApp.swift */; };
-		B3C9747F255A3AA5008C3B2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9747E255A3AA5008C3B2F /* ContentView.swift */; };
+		B3C9747F255A3AA5008C3B2F /* ContentGeometryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C9747E255A3AA5008C3B2F /* ContentGeometryView.swift */; };
 		B3C97481255A3AA9008C3B2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C97480255A3AA9008C3B2F /* Assets.xcassets */; };
 		B3C97484255A3AA9008C3B2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3C97483255A3AA9008C3B2F /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B316E12425635A9100272AD7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = "../../../../hackerranck-exercises-swift/Data Structures/ContentView.swift"; sourceTree = "<group>"; };
+		B316E12825635AEC00272AD7 /* Flower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Flower.swift; path = "../../../../hackerranck-exercises-swift/Data Structures/Flower.swift"; sourceTree = "<group>"; };
+		B316E12B2563631500272AD7 /* ColorCyclingCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorCyclingCircle.swift; path = "../../../../hackerranck-exercises-swift/Data Structures/ColorCyclingCircle.swift"; sourceTree = "<group>"; };
+		B316E12E2563654A00272AD7 /* ColorCyclingCircleContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ColorCyclingCircleContentView.swift; path = "../../../../hackerranck-exercises-swift/Data Structures/ColorCyclingCircleContentView.swift"; sourceTree = "<group>"; };
 		B3C97479255A3AA5008C3B2F /* project-nine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project-nine.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C9747C255A3AA5008C3B2F /* project_nineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_nineApp.swift; sourceTree = "<group>"; };
-		B3C9747E255A3AA5008C3B2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B3C9747E255A3AA5008C3B2F /* ContentGeometryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentGeometryView.swift; sourceTree = "<group>"; };
 		B3C97480255A3AA9008C3B2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3C97483255A3AA9008C3B2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3C97485255A3AA9008C3B2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,10 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				B3C9747C255A3AA5008C3B2F /* project_nineApp.swift */,
-				B3C9747E255A3AA5008C3B2F /* ContentView.swift */,
+				B3C9747E255A3AA5008C3B2F /* ContentGeometryView.swift */,
 				B3C97480255A3AA9008C3B2F /* Assets.xcassets */,
 				B3C97485255A3AA9008C3B2F /* Info.plist */,
 				B3C97482255A3AA9008C3B2F /* Preview Content */,
+				B316E12425635A9100272AD7 /* ContentView.swift */,
+				B316E12825635AEC00272AD7 /* Flower.swift */,
+				B316E12B2563631500272AD7 /* ColorCyclingCircle.swift */,
+				B316E12E2563654A00272AD7 /* ColorCyclingCircleContentView.swift */,
 			);
 			path = "project-nine";
 			sourceTree = "<group>";
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3C9747F255A3AA5008C3B2F /* ContentView.swift in Sources */,
+				B316E12F2563654A00272AD7 /* ColorCyclingCircleContentView.swift in Sources */,
+				B316E12C2563631500272AD7 /* ColorCyclingCircle.swift in Sources */,
+				B3C9747F255A3AA5008C3B2F /* ContentGeometryView.swift in Sources */,
 				B3C9747D255A3AA5008C3B2F /* project_nineApp.swift in Sources */,
+				B316E12925635AEC00272AD7 /* Flower.swift in Sources */,
+				B316E12525635A9100272AD7 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
